@@ -1,29 +1,23 @@
 <!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#6C63FF"><meta name="description" content="SMART KIDZ - playful learning for ages 3 to 6">
-<link rel="manifest" href="manifest.json"><link rel="stylesheet" href="style.css">
-<title>SMART KIDZ</title>
-</head>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#6C63FF"><meta name="description" content="SMART KIDZ playful learning for ages 3 to 6">
+<link rel="manifest" href="manifest.json"><link rel="stylesheet" href="style.css"><title>SMART KIDZ</title></head>
 <body>
 <header><div class="brand"><span class="logo">★</span><div><b>SMART KIDZ</b><small>Learn • Play • Grow</small></div></div><button id="langBtn" class="small">हिंदी</button></header>
 <main>
-<section class="hero"><span class="pill">AGES 3–6</span><h1>Little steps.<br><em>Big learning!</em></h1><p>खेल-खेल में सीखें • Learn through play • खेळातून शिका</p><div class="hero-art">🧩 🖍️ 🔤 🌈</div></section>
-<section class="progress-card"><div><b>Today's learning</b><p id="progressText">0 of 3 free activities completed</p></div><div class="progress"><span id="progressBar"></span></div></section>
-<h2>Choose an activity <small>एक गतिविधि चुनें</small></h2>
+<section class="hero"><span class="pill" data-i18n="age">AGES 3–6</span><div class="hero-row"><div><h1 data-i18n="headline">Little steps.<br><em>Big learning!</em></h1><p data-i18n="tagline">खेल-खेल में सीखें • Learn through play • खेळातून शिका</p></div><div class="teacher" aria-label="Owl teacher">🦉<small data-i18n="teacher">Milo the teacher</small></div></div><div class="hero-art">🧩 🖍️ 🔤 🌈</div></section>
+<section class="progress-card"><div><b data-i18n="today">Today's learning</b><p id="progressText">0 activities completed</p></div><div class="progress"><span id="progressBar"></span></div></section>
+<h2 data-i18n="choose">Choose an activity <small>एक गतिविधि चुनें • उपक्रम निवडा</small></h2>
 <div class="grid">
-<button class="activity" data-id="colors"><span>🎨</span><b>Colour Hunt</b><small>रंग पहचानो • रंग ओळखा</small><label>FREE</label></button>
-<button class="activity" data-id="count"><span>🔢</span><b>Count & Learn</b><small>गिनती • मोजणी</small><label>FREE</label></button>
-<button class="activity" data-id="shapes"><span>🔺</span><b>Shape Match</b><small>आकार • Shapes</small><label>FREE</label></button>
-<button class="activity locked" data-id="letters"><span>🔤</span><b>ABC & अक्षर</b><small>Letters and sounds</small><label>₹99 KIT</label></button>
-<button class="activity locked" data-id="puzzles"><span>🧠</span><b>Brain Games</b><small>सोचो और सीखो</small><label>₹99 KIT</label></button>
-<button class="activity locked" data-id="art"><span>🖍️</span><b>Colouring Pages</b><small>रंग भरो • Colour</small><label>₹99 KIT</label></button>
+<button class="activity" data-id="colors"><span>🎨</span><b data-i18n="colors">Colour Hunt</b><small data-i18n="colorsSub">रंग पहचानो • रंग ओळखा</small><label>FREE</label></button>
+<button class="activity" data-id="count"><span>🔢</span><b data-i18n="count">Count & Learn</b><small data-i18n="countSub">गिनती • मोजणी</small><label>FREE</label></button>
+<button class="activity" data-id="shapes"><span>🔺</span><b data-i18n="shapes">Shape Match</b><small data-i18n="shapesSub">आकार पहचानो • आकार ओळखा</small><label>FREE</label></button>
+<button class="activity" data-id="letters"><span>🔤</span><b data-i18n="letters">ABC & अक्षर</b><small data-i18n="lettersSub">Letters and sounds</small><label>FREE</label></button>
+<button class="activity" data-id="memory"><span>🧠</span><b data-i18n="memory">Memory Game</b><small data-i18n="memorySub">याददाश्त • स्मरण</small><label>FREE</label></button>
+<button class="activity locked" data-id="premium"><span>🖍️</span><b data-i18n="colouring">Colouring Pack</b><small data-i18n="colouringSub">Print and colour</small><label>₹99 KIT</label></button>
 </div>
-<section class="parent"><h2>For parents 👨‍👩‍👧</h2><p>Short, playful activities. Sit with your child and celebrate every try.</p><button id="parentBtn" class="outline">Parent tips</button></section>
-<section class="unlock"><div><span class="pill gold">FULL KIT</span><h2>Unlock the complete kit</h2><p>More games, letters, printable worksheets and a 30-day activity calendar.</p><b class="price">₹99 <small>one-time</small></b></div><button id="buyBtn" class="primary">Unlock full kit</button><small class="disclaimer">Demo version: payment is not connected yet. No charge will be made.</small></section>
-</main>
-<nav><button class="active">🏠<small>Home</small></button><button id="activitiesNav">🎯<small>Activities</small></button><button id="parentsNav">👪<small>Parents</small></button></nav>
+<section class="parent"><h2 data-i18n="parents">For parents 👨‍👩‍👧</h2><p data-i18n="parentDesc">Short, playful activities. Sit with your child and celebrate every try.</p><button id="parentBtn" class="outline" data-i18n="parentTips">Parent tips</button></section>
+<section class="unlock"><div><span class="pill gold">FULL KIT</span><h2 data-i18n="unlockTitle">Unlock the complete kit</h2><p data-i18n="unlockDesc">More games, printable worksheets and a 30-day activity calendar.</p><b class="price">₹99 <small data-i18n="oneTime">one-time</small></b></div><button id="buyBtn" class="primary" data-i18n="unlockButton">Unlock full kit</button><small class="disclaimer" data-i18n="demoNote">Demo: payment is not connected yet. No charge will be made.</small></section>
+</main><nav><button class="active">🏠<small data-i18n="home">Home</small></button><button id="activitiesNav">🎯<small data-i18n="activities">Activities</small></button><button id="parentsNav">👪<small data-i18n="parentsTab">Parents</small></button></nav>
 <div id="modal" class="modal hidden"><div class="sheet"><button id="close" class="close">✕</button><div id="modalContent"></div></div></div>
-<script src="app.js"></script>
-</body></html>
+<script src="app.js"></script></body></html>
