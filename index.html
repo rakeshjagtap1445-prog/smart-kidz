@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#6C63FF"><meta name="description" content="SMART KIDZ - playful learning for ages 3 to 6">
+<link rel="manifest" href="manifest.json"><link rel="stylesheet" href="style.css">
+<title>SMART KIDZ</title>
+</head>
+<body>
+<header><div class="brand"><span class="logo">★</span><div><b>SMART KIDZ</b><small>Learn • Play • Grow</small></div></div><button id="langBtn" class="small">हिंदी</button></header>
+<main>
+<section class="hero"><span class="pill">AGES 3–6</span><h1>Little steps.<br><em>Big learning!</em></h1><p>खेल-खेल में सीखें • Learn through play • खेळातून शिका</p><div class="hero-art">🧩 🖍️ 🔤 🌈</div></section>
+<section class="progress-card"><div><b>Today's learning</b><p id="progressText">0 of 3 free activities completed</p></div><div class="progress"><span id="progressBar"></span></div></section>
+<h2>Choose an activity <small>एक गतिविधि चुनें</small></h2>
+<div class="grid">
+<button class="activity" data-id="colors"><span>🎨</span><b>Colour Hunt</b><small>रंग पहचानो • रंग ओळखा</small><label>FREE</label></button>
+<button class="activity" data-id="count"><span>🔢</span><b>Count & Learn</b><small>गिनती • मोजणी</small><label>FREE</label></button>
+<button class="activity" data-id="shapes"><span>🔺</span><b>Shape Match</b><small>आकार • Shapes</small><label>FREE</label></button>
+<button class="activity locked" data-id="letters"><span>🔤</span><b>ABC & अक्षर</b><small>Letters and sounds</small><label>₹99 KIT</label></button>
+<button class="activity locked" data-id="puzzles"><span>🧠</span><b>Brain Games</b><small>सोचो और सीखो</small><label>₹99 KIT</label></button>
+<button class="activity locked" data-id="art"><span>🖍️</span><b>Colouring Pages</b><small>रंग भरो • Colour</small><label>₹99 KIT</label></button>
+</div>
+<section class="parent"><h2>For parents 👨‍👩‍👧</h2><p>Short, playful activities. Sit with your child and celebrate every try.</p><button id="parentBtn" class="outline">Parent tips</button></section>
+<section class="unlock"><div><span class="pill gold">FULL KIT</span><h2>Unlock the complete kit</h2><p>More games, letters, printable worksheets and a 30-day activity calendar.</p><b class="price">₹99 <small>one-time</small></b></div><button id="buyBtn" class="primary">Unlock full kit</button><small class="disclaimer">Demo version: payment is not connected yet. No charge will be made.</small></section>
+</main>
+<nav><button class="active">🏠<small>Home</small></button><button id="activitiesNav">🎯<small>Activities</small></button><button id="parentsNav">👪<small>Parents</small></button></nav>
+<div id="modal" class="modal hidden"><div class="sheet"><button id="close" class="close">✕</button><div id="modalContent"></div></div></div>
+<script src="app.js"></script>
+</body></html>
